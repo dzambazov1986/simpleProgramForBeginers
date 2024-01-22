@@ -1,15 +1,10 @@
-﻿int numberOfChicken = int.Parse(Console.ReadLine());
-int numberOfFish = int.Parse(Console.ReadLine());   
-int vegetarianMenu = int.Parse(Console.ReadLine());
+﻿int basketballTrainingFee = int.Parse(Console.ReadLine());
 
-double priceChickenMenu = numberOfChicken * 10.35;
-double priceFishMenu = numberOfFish * 12.40;
-double priceVegetarianMenu = vegetarianMenu * 8.15;
+double basketballSneakers = (basketballTrainingFee - 0.4 * basketballTrainingFee);
+double basketballTeam = (basketballSneakers - 0.20 * basketballSneakers);
+double priceForBasketball = basketballTeam * 0.25;
+double basketballAcesoaries = 0.2 * priceForBasketball;
 
-double totalCostMenus = priceChickenMenu + priceFishMenu + priceVegetarianMenu;
-double priceForDesert = 0.2 * totalCostMenus;
-double deliveryPrice = 2.50;
+double totalPriceForEquipment = basketballTrainingFee + basketballSneakers + basketballTeam + priceForBasketball + basketballAcesoaries;
 
-double totalOrderPrice = totalCostMenus + priceForDesert + deliveryPrice;
-
-Console.WriteLine(totalOrderPrice);
+Console.WriteLine(totalPriceForEquipment);
