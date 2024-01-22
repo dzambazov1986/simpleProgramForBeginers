@@ -1,9 +1,7 @@
-﻿int centuries = int.Parse(Console.ReadLine());
+﻿double number1 = double.Parse(Console.ReadLine());
+double number2 = double.Parse(Console.ReadLine());
+double number3 = double.Parse(Console.ReadLine());
 
-int years = centuries * 100;
-double days = Math.Floor(years * 365.2422);
-double hours = days * 24;
-double minutes = hours * 60;
-
-Console.WriteLine($"{centuries} centuries = {years:F0} years = {days:F0} days = {hours:F0} hours = {minutes:F0} minutes");
-
+Console.WriteLine(number3);
+Console.WriteLine(number2);
+Console.WriteLine(number1);
