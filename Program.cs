@@ -1,9 +1,15 @@
-﻿int centuries = int.Parse(Console.ReadLine());
+﻿int requiredNylon = int.Parse(Console.ReadLine());
+int requiredPaint = int.Parse(Console.ReadLine());
+int quantityThiner = int.Parse(Console.ReadLine());
+int hoursNeedCraftsmen = int.Parse(Console.ReadLine());
 
-int years = centuries * 100;
-double days = Math.Floor(years * 365.2422);
-double hours = days * 24;
-double minutes = hours * 60;
+double nylon = (requiredNylon + 2) * 1.50;
+double paint = (requiredPaint + 0.1 * requiredPaint) * 14.50;
+int thiner = quantityThiner * 5;
+double bags = 0.40;
 
-Console.WriteLine($"{centuries} centuries = {years:F0} years = {days:F0} days = {hours:F0} hours = {minutes:F0} minutes");
+double totalAmountMaterials = nylon + paint + thiner + bags;
+double amountCraftsmen = (totalAmountMaterials * 0.3 ) * hoursNeedCraftsmen;
+double totalAmount = (totalAmountMaterials + amountCraftsmen);
 
+Console.WriteLine(totalAmount);
